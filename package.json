@@ -1,0 +1,25 @@
+{
+  "name": "clean-node-rest-api",
+  "version": "1.0.0",
+  "description": "Construindo uma API Rest em NodeJS utilizando TDD, Clean Architecture e Design Patterns.",
+  "author": "Bruno Pamplona",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --silent --colors --noStackTrace",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage"
+  },
+  "lint-staged": {
+    "*.js":["standard"] 
+  },
+  "standard": {
+      "env": ["jest"]
+
+  },
+  "devDependencies": {
+    "husky": "^4.0.0-beta.5",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.3",
+    "standard": "^14.3.1"
+  }
+}
